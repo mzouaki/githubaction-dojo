@@ -1,0 +1,16 @@
+name: "Greeting action"
+description: "An action with username and greeting custom message"
+inputs:
+  username:
+    description: "User name"
+    required: true
+  greeting:
+    description: "Custom message"
+    required: false
+    default: "Hello"
+outputs:
+  message:
+    description: "Le message généré par l'action"
+runs:
+  using: "node20"
+  main: "index.js"
